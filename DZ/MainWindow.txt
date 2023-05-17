@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1060" d:DesignHeight="800" MinWidth="1060" MinHeight="800" MaxWidth="1060" MaxHeight="800"
+        x:Class="App1.MainWindow"
+        Title="App1">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel
+			Grid.Row="0"
+			Background="Red">
+			<TextBlock
+				HorizontalAlignment="Left"
+				Foreground="White">
+				IP2K-22
+			</TextBlock>
+		</StackPanel>
+		<StackPanel
+			Grid.Row="1"
+			Background="Yellow">
+			<TextBlock
+				HorizontalAlignment="Center">
+				MDK
+			</TextBlock>
+		</StackPanel>
+		<StackPanel
+			Grid.Row="2"
+			Background="Blue">
+			<TextBlock
+				HorizontalAlignment="Right"
+				Foreground="White">
+				Maslov
+			</TextBlock>
+		</StackPanel>
+		<Button
+				Grid.Row="2"
+				Name="NextButton"
+				Content="Next"
+				Background="White"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Bottom"
+				Margin="10">
+		</Button>
+	</Grid>
+</Window>

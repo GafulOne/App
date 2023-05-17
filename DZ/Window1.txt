@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1060" d:DesignHeight="800" MinWidth="1060" MinHeight="800" MaxWidth="1060" MaxHeight="800"
+        x:Class="App1.Windows.Window1"
+        Title="Window1">
+	<Grid>
+		<ComboBox
+				SelectedIndex="0"
+				Name="SelectImage"
+				HorizontalAlignment="Left">
+
+			<ComboBoxItem Content="Image 1"/>
+			<ComboBoxItem Content="Image 2"/>
+			<ComboBoxItem Content="Image 3"/>
+		</ComboBox>
+
+		<!--<ComboBox
+			SelectedIndex="0"
+			Name="SelectImage"
+			HorizontalAlignment="Left">
+			<ComboBox.Item>
+				<ComboBoxItem Content="D:\rep.VS\App1\App1\Image\Image_1.jpg"/>
+				<ComboBoxItem Content="D:\rep.VS\App1\App1\Image\Image_2.jpg"/>
+				<ComboBoxItem Content="D:\rep.VS\App1\App1\Image\Image_3.jpg"/>
+			</ComboBox.Item>
+		</ComboBox>-->
+
+		<Image
+			Source="D:\rep.VS\App1\App1\Image\Image_1.jpg">
+		</Image>
+
+		<Button
+			Name="BackButton"
+			Content="Back"
+			Background="Black"
+			Foreground="White"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Top"
+			Margin="10">
+		</Button>
+	</Grid>
+</Window>

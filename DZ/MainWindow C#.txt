@@ -1,0 +1,23 @@
+using App1.Windows;
+using Avalonia.Controls;
+using Avalonia.Interactivity;
+using System;
+
+namespace App1
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            NextButton.Click += NextButton_Click;
+        }
+
+        private void NextButton_Click(object? sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close();
+        }
+    }
+}
